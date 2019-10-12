@@ -1,0 +1,112 @@
+.subscription {
+    width: 100%;
+    .subscription__options-list {
+        padding: 45px 0;
+        padding-bottom: 130px;
+    }
+    
+}
+
+.subscription__toggle-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.subscription__toggle-item {
+    margin-right: 54px;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.subscription__toggle {
+    background: none;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E65C7B;
+}
+
+.subscription__options-list {
+    background-image: url(../img/subscribtions-bg.png);
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 0;
+}
+
+.subscription__options-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 36px;
+    width: 263px;
+    padding: 54px 45px;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+    background-color: #fff;
+    & .subscription__btn {
+        display: none;
+        width: 223px;
+        height: auto;
+        padding: 15px;
+        margin-top: 34px;
+
+    }
+    &:nth-child(2) {
+        padding: 57px 54px;
+        width: 331px;
+        & .subscription__btn {
+            display: block;
+    
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.subscription__options-times-of-day {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #8E80A9; 
+    margin-bottom: 18px;
+}
+
+.subscription__options-time {
+    width: 151px;
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #E65C7B;
+    margin-bottom: 28px;
+}
+
+.subscription__cost {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #8E80A9;
+    
+}

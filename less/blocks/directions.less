@@ -1,0 +1,117 @@
+.directions {
+    width: 1440px;
+    margin-top: 60px;
+    background-color: #FCF8FE;
+    margin-bottom: 150px;
+}
+
+.directions__wrapper {
+    
+    position: relative;
+    width: 100%;
+    background-image: url(/img/directions-bg.jpg);
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.directions .directions__list {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 921px;
+    margin: 0 auto;
+
+}
+.directions__2wrapper {
+    margin: 0 auto;
+    width: 921px;
+    position: relative;
+}
+
+.directions__item {
+    position: relative;
+    height: 180px;
+    display: flex;
+    flex-shrink: 0;
+    &:nth-child(1){
+        width: 366px;
+        height: 493px;
+
+        flex-direction: column;
+        & .directions__btn {
+            height: 182px;
+            width: 64px;
+            right: 0;
+            bottom: 0;
+            &::after {
+                left: 23px;
+                top: 75px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.directions__img {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.directions__img-wrapper {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.directions__item-info {
+    padding: 35px;
+}
+
+.directions__title {
+    margin-bottom: 11px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #8E80A9;
+}
+
+.directions__time {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8E80A9;
+}
+
+.directions__name {
+    margin-top: 15px;
+}
+
+.directions__btn {
+    bottom: 35px;
+    right: 35px;
+    position: absolute;
+}
+
+.directions__link {
+    position: absolute;
+    padding: 14px 191px;
+    bottom: 7px;
+    right: 0px;
+
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8E80A9;
+}
