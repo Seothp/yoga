@@ -2,7 +2,6 @@
     width: 100%;
     margin: 0 auto;
     margin-bottom: 140px;
-    background-image: url(../img/team-bg.png);
     background-position: 0px 0px;
     background-repeat: no-repeat;
     & .team__list {
@@ -152,4 +151,33 @@
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+.team__buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    & .btn {
+        width: 30px;
+        height: 20px;
+        &::after {
+            width: 7px;
+            height: 7px;
+        }
+    }
+}
+
+.team__buttons-count {
+    margin: 0 11px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: #8E80A9;
+    
 }
