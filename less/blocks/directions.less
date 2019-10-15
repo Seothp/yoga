@@ -6,7 +6,6 @@
 }
 
 .directions__wrapper {
-    
     position: relative;
     width: 100%;
     background-image: url(/img/directions-bg.jpg);
@@ -14,6 +13,11 @@
     background-repeat: repeat;
 }
 
+.directions__2wrapper {
+    margin: 0 auto;
+    width: 921px;
+    position: relative;
+}
 .directions .directions__list {
     
     display: flex;
@@ -23,11 +27,6 @@
     width: 921px;
     margin: 0 auto;
 
-}
-.directions__2wrapper {
-    margin: 0 auto;
-    width: 921px;
-    position: relative;
 }
 
 .directions__item {
@@ -114,4 +113,76 @@
     font-size: 14px;
     line-height: 20px;
     color: #8E80A9;
+}
+
+@media (max-width: 1440px) {
+    .directions {
+        margin: 0 auto;
+        width: 768px;
+        margin-bottom: 120px;
+    }
+    .directions__2wrapper {
+        width: 100%;
+    }
+    .directions .directions__list {
+        align-content: space-between;
+        width: 620px;
+        height: 335px;
+    
+    }
+    .directions__item {
+        width: 355px;
+        height: 122px;
+        margin-bottom: 18px;
+        &:nth-child(1){
+            width: 247px;
+            height: 333px;
+            & .directions__img-wrapper {
+                width: 100%;
+            }
+            flex-direction: column;
+            & .directions__btn {
+                height: 123px;
+                width: 43px;
+                right: 0;
+                bottom: 0;
+                &::after {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+        }
+    }
+    .directions__item-info {
+        padding: 19px 20px;
+    }
+    .directions__title {
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    
+    .directions__time {
+        font-size: 10px;
+        line-height: 15px;
+        color: #8E80A9;
+    }
+    
+    .directions__name {
+        margin-top: 10px;
+    }
+    .directions__img-wrapper {
+        width: 148px;
+    }
+    .directions__link {
+        font-size: 12px;
+        padding: 7px 127px 11px 127px;
+        bottom: 0px;
+        right: 74px;
+    }
+    .directions__btn {
+        bottom: 24px;
+        right: 23px;
+    }
+    
 }

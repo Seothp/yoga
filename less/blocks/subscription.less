@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 45px;
 }
 
 .subscription__toggle-item {
@@ -111,4 +110,37 @@
 
     color: #8E80A9;
     
+}
+@media (max-width: 1440px) {
+    .subscription__options-item {
+        margin-right: 25px;
+        width: 176px;
+        padding: 36px;
+        & .subscription__btn {
+            width: 149px;
+            padding: 13px 0;
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        &:nth-child(2) {
+            padding: 36px;
+            width: 222px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .subscription__options-times-of-day {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+    .subscription__options-time {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .subscription__cost {
+        font-size: 21px;
+    }
 }

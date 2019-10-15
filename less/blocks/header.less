@@ -59,3 +59,37 @@
         transform: rotate(45deg) ;
     }
 }
+
+@media (max-width: 1440px) {
+    .header {
+        width: 768px;
+        min-height: 430px;
+        padding: 35px 80px;
+        background-size: cover;
+    }
+    .header__wrapper {
+        width: 608px;
+        min-height: 350px;
+        top: 35px;
+        left: 80px;
+        
+    }
+    .header__btn {
+        height: 24px;
+        width: 150px;
+        padding-left: 38px;
+    
+        font-size: 10px;
+        line-height: 12px;
+        &::before {
+            width: 30px;
+            height: 26px;
+        }
+        &::after {
+            left: 11px;
+            top: 10px;
+            width: 7px;
+            height: 7px;
+        }
+    }
+}

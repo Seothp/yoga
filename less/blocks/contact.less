@@ -100,3 +100,33 @@
 
     }
 }
+
+@media (max-width: 1440px) {
+    .contact {
+        width: 100%;
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    
+    
+        background-image: url(../img/form-bg.jpg);
+        & .contact__info-list {
+            margin-bottom: 30px;
+        }
+    }
+    .contact__info {
+        min-width: unset;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 70px;
+    }
+    .contact__info-list {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

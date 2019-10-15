@@ -75,3 +75,31 @@
     line-height: 16px;
     color: #8B7EAC;
 }
+
+@media (max-width: 1440px) {
+    .main-nav__btn {
+        padding-left: 20px;
+        font-size: 12px;
+        line-height: 8px;
+    }
+    .main-nav__burger-menu-line {
+        width: 13px;
+        height: 1px;
+        &:nth-child(2) {
+            // transform: translateY(-1px);
+    
+        }
+        &:nth-child(3) {
+            transform: translateY(-2px);
+        }
+        &--short {
+            width: 8px;
+        }
+    }
+    .main-nav__tel-link,
+    .main-nav__city-btn {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    
+}
