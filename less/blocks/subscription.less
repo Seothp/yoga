@@ -144,3 +144,34 @@
         font-size: 21px;
     }
 }
+
+@media (max-width: 767.98px) {
+    .subscription {
+        margin-bottom: 40px;
+        .subscription__options-list {
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 35px;
+        }
+    }
+    .subscription__toggle-item {
+        margin-right: 25px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .subscription__toggle {
+        font-size: 12px;
+    }
+    
+    .subscription__options-item {
+        &:nth-child(n) {
+            width: 250px;
+            height: 200px;
+            padding: 30px 50px;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}

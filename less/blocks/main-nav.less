@@ -85,10 +85,6 @@
     .main-nav__burger-menu-line {
         width: 13px;
         height: 1px;
-        &:nth-child(2) {
-            // transform: translateY(-1px);
-    
-        }
         &:nth-child(3) {
             transform: translateY(-2px);
         }
@@ -102,4 +98,40 @@
         line-height: 12px;
     }
     
+}
+
+@media (max-width: 767.98px) {
+    .main-nav__btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 20px;
+        font-size: 0px;
+        line-height: 0px;
+        width: 30px;
+        height: 12px;
+        padding-left: 0;
+    }
+    .main-nav__burger-menu-line {
+        
+        position: relative;
+        width: 30px;
+        top: unset;
+        left: unset;
+        &:nth-child(2) {
+            transform: unset;
+            top: unset;
+            left: unset;
+        }
+        &:nth-child(3) {
+            top: unset;
+            left: unset;
+            width: 20px;
+            transform: unset;
+        }
+    }
+    .main-nav__city-btn,
+    .main-nav__list {
+        display: none;
+    }
 }
